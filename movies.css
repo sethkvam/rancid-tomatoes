@@ -1,0 +1,104 @@
+/*
+	Movie review website, similar to Rotten Tomatoes, switches movies with PHP
+	movies.php is styled by movies.css
+*/
+body {
+	background-color: #ff9955;
+}
+
+.banner {
+	background-image: url("images/tomatobanner.png");
+	background-repeat: repeat-x;
+}
+
+.banner h1 {
+	position: relative;
+	left: 25%;
+	text-shadow: 10px 10px 10px #000000;
+	color: white;
+}
+
+#movietitle {
+	text-align: center;
+	text-shadow: 4px 4px 4px #999999;
+	font-size: 36pt;
+	font-weight: bold;
+	color: #114400;
+	margin: 20px;
+}
+
+#main {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 8px solid #999999;
+	overflow: hidden; 
+	border-radius: 20px;
+}
+
+#ratingbar {
+	background-color: #114400;
+	font-size: 64pt;
+	font-weight: bold;
+	color: #ff2211;
+}
+
+#ratingbar p, #ratingbar form {
+	margin: 0em;
+	display: inline;
+}
+
+#generaloverview {
+	background-color: #558822;
+	width: 250px;
+	float: right;
+}
+
+#generaltext {
+	margin: 10px;
+}
+
+.reviewcolumn {
+	width: 275px;
+	overflow: hidden;
+}
+
+.review { /* review + critic */
+	width: 255px;
+	margin: 10px;
+}
+
+.review p:first-child { /* review text */
+	background-color: #ffbb88;
+	border: 3px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 8pt;
+	overflow: hidden;
+}
+
+.review p:not(:first-child) { /* critic text */
+	font-style: italic;
+	text-align: right;
+}
+
+.reviewcolumn,
+#reviewsmain,
+.review img
+{
+	float: left;
+}
+
+.review p
+{
+	margin: 0px;
+}
+
+.review,
+#generaltext,
+#ratingbar,
+#movietitle
+{
+	font-family: sans-serif;
+}
